@@ -1,11 +1,10 @@
-
 import './App.css';
+import FirstCard from "./FirstCard";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      </header>
+ return (
+  <div className="App" style={{ width: "100rem" }}>
+      <FirstCard defaultCity="Los Angeles" />
     </div>
   );
 }

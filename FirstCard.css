@@ -1,0 +1,95 @@
+.city {
+  margin: 0 auto;
+}
+.city,
+.search-engine {
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #fff3af;
+  margin: 0 auto;
+  margin: 5px;
+  float: none;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#location-button {
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: #fff3af;
+  border-radius: 2%;
+  transition: all 200ms ease-in-out;
+}
+#location-button:hover {
+  background-color: beige;
+  cursor: pointer;
+}
+
+.cardFirst {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 2px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.card-body-first {
+  text-align: center;
+  background-color: #fff3af;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+#time {
+  font-size: 25px;
+  font-family: "Amatic SC", cursive;
+  float: inline-start;
+  margin-bottom: 2px;
+}
+#primaryicon {
+  margin: 0 auto;
+  display: block;
+}
+.units {
+  position: relative;
+  top: -30px;
+}
+
+#card-title-first {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  font-family: "Amatic SC", cursive;
+}
+.card-subtitle-first {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 1px;
+  padding-top: 5px;
+  font-family: "Indie Flower", cursive;
+}
+#temperature {
+  font-size: 50px;
+}
+#note {
+  padding-left: 22px;
+  padding-right: 22px;
+  text-align: center;
+}
+#celsius-link,
+#fahrenheit-link {
+  text-decoration: none;
+  color: #000000;
+}
+.active {
+  cursor: default;
+  color: #000000;
+}
+.active:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.wind-speed,
+.humidity {
+  font-size: 30px;
+}
