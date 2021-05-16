@@ -1,8 +1,11 @@
 footer {
-  text-align: center;
   color: #000000;
   line-height: 2;
-  background-color: #ecd18c;
+  background-color: transparent;
   bottom: 0;
-  font-family: "Amatic SC", cursive;
+  font-family: "Indie Flower", cursive;
+}
+.font-link {
+  font-family: "Indie Flower", cursive;
+  color: #000000;
 }

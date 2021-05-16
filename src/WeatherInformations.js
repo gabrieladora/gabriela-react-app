@@ -11,23 +11,19 @@ export default function WeatherInformations(props){
         <div className="card-body-first">
           <p>
             {" "}
-            <small>Current city:</small>
+            <small>📍 </small>
             <em>{props.data.city}</em>
           </p>
           <h5 className="card-title" id="card-title-first">
-            <FormattedDate date={props.data.date} />
+           ▪ { props.data.description} ▪
           </h5>
-          <br />
           <WeatherIcon code={props.data.icon} size={78} />
           <br />
           <WeatherTemperature  celsius={props.data.temperature} />
-          <p id="primary-description"></p>
           <p className="wind-speed" id="wind-speed">Wind speed: {Math.round(props.data.wind)} km/h</p>
           <p className="humidity" id="humidity">Humidity: {props.data.humidity}%</p>
-          <h6 className="card-subtitle-first">{ props.data.description} </h6>
-          <p id="note"></p>
           <p id="time">
-            <small>Last updated at </small> <FormattedDate date={props.data.date}/>
+            <small>▪Last updated at </small><em><FormattedDate date={props.data.date}/> </em>
           </p>
     </div>
     </div> 

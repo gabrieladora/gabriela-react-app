@@ -48,7 +48,7 @@ export default function FirstCard(props) {
                   type="text"
                   id="input-city"
                   className="city"
-                  placeHolder="Los Angeles"
+                  placeholder="Enter city"
                    autoFocus="on"
                    onChange={handleChange}
                 />
@@ -58,7 +58,6 @@ export default function FirstCard(props) {
                   value=" 📍Search city"
                 />
               </form>
-              <button id="location-button">📍Click for your location📍</button>
             </div>
           </div>
         </div>
@@ -72,5 +71,5 @@ export default function FirstCard(props) {
  )
   }else{
     search();
-    return "Data is loading..."
+    return <em>"Data is loading..."</em>
   }}
