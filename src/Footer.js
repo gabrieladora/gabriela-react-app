@@ -6,7 +6,7 @@ export default function Footer(){
         <footer>
           <em>
             {" "}
-            <a href="https://github.com/gabrieladora/gabi-react-app" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/gabrieladora/gabi-react-app" target="_blank" rel="noopener noreferrer" className="font-link">
               Open-source code
             </a>{" "}
             by Gabriela-Dora

@@ -1,5 +1,3 @@
-@import url("https://fonts.google.com/specimen/Caveat?selection.family=Bungee+Inline");
-
 .city {
   margin: 0 auto;
 }
@@ -41,11 +39,10 @@
   background-color: #fff3af;
   opacity: 0.9;
   border-radius: 10px;
-  font-family: "Amatic SC", cursive;
 }
 #time {
   font-size: 25px;
-  font-family: "Caveat", cursive;
+  font-family: "Amatic SC", cursive;
   float: inline-start;
   margin-bottom: 2px;
 }
