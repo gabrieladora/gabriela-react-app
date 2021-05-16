@@ -19,14 +19,6 @@ return days[day];
           <span className="MinTemperature">{Math.round(props.data.temp.min)}℃</span>
           
         </div>
- <footer>
-          <em>
-            {" "}
-            <a href="https://github.com/gabrieladora/gabi-react-app" target="_blank" rel="noopener noreferrer">
-              Open-source code
-            </a>{" "}
-            by Gabriela-Dora
-          </em>
-        </footer>   
+ 
       </div> 
     )}

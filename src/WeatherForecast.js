@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./Forecast.css";
 import WeatherForecastDay from "./WeatherForecastDay";
+import Footer from "./Footer";
  
 export default function WeatherForecast(props){
  //console.log(props)
@@ -18,16 +19,22 @@ export default function WeatherForecast(props){
     return (
     <div className="WeatherForecast">
       <div className="WeatherForecast">
-        <div className="row first-forecast" id="first-forecast"> </div>
+        <div class="container">
+        <div className="row" id="first-forecast"> </div>
+         <div class="col">
         {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
               return (
                 <div className="col" key={index}>
                   <WeatherForecastDay data={dailyForecast} />
                 </div>
+               
               );
-            }
+            } 
           })}
+          </div>
+     </div>
+     <Footer />
      </div>
      </div>
       );
@@ -39,5 +46,4 @@ let latitude=  props.coordinates.lat ;
 axios.get(url).then(handleResponse);
  
 return null;
-  
  }   }
