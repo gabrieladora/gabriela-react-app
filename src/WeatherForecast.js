@@ -9,20 +9,25 @@ export default function WeatherForecast(props){
  let[forecast, setForecast]=useState(" ");
 
  function handleResponse(response){
-   //console.log(response.data)
+   console.log(response.data)
    setForecast(response.data.daily)
    setLoaded(true);
  }
  if(loaded){
-   console.log(forecast)
+   //console.log(forecast)
     return (
     <div className="WeatherForecast">
       <div className="WeatherForecast">
-     
-        <div className="row first-forecast" id="first-forecast"></div>
-          <div className="col">
-         <WeatherForecastDay data={forecast[0]} />
+        <div className="row first-forecast" id="first-forecast"> </div>
+        {forecast.map(function (dailyForecast, index){
+         if(index < 5){
+         return (
+            <div className="row" key={index}>
+         <WeatherForecastDay data={dailyForecast} />
      </div>
+          );
+         }
+        })}  
      </div>
      </div>
       );
