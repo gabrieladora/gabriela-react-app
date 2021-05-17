@@ -3,6 +3,7 @@ import "./FirstCard.css";
 import axios from "axios";
 import WeatherInformations from "./WeatherInformations";
 import WeatherForecast from "./WeatherForecast";
+import 'loading-dots/loading-dots.css'
 
 export default function FirstCard(props) {
   const[weather,setWeather]= useState({ ready: false });
@@ -71,5 +72,5 @@ export default function FirstCard(props) {
  )
   }else{
     search();
-    return <em>"Data is loading..."</em>
+    return <loading-dots>....</loading-dots>
   }}

@@ -1,6 +1,11 @@
 .WeatherForecast {
   display: inline-block;
 }
+.card {
+  background-color: #fff3af;
+  max-width: 800px;
+  border-radius: 10px;
+}
 
 .MinTemperature {
   opacity: 0.7;

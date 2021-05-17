@@ -24,7 +24,7 @@ setLoaded(false);
     return (
     <div className="WeatherForecast">
       <div className="WeatherForecast">
-       <div className="card" style={{ width: "20rem" }} >
+       <div className="card" style={{ width: "30rem" }} >
         <div className="SecondCard"></div>
        
         <div className="container">
@@ -33,9 +33,11 @@ setLoaded(false);
         {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
               return (
+               
                 <div className="col" key={index}>
-                  <WeatherForecastDay data={dailyForecast} />
+                 <em>  <WeatherForecastDay data={dailyForecast} /> </em>
                 </div>
+                
                
               );
               } else {

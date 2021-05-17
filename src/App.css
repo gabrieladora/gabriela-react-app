@@ -34,3 +34,4 @@ p {
     transform: rotate(360deg);
   }
 }
+@import "loading-dots";
